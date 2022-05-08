@@ -16,6 +16,7 @@
   --Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
   --Dark-blue--photography-text: hsl(198, 62%, 26%);
   --Dark-moderate-cyan-footer-bg: hsl(168, 34%, 41%);
+  --Dark-moderate-cyan-footer-bg2: hsl(168, 34%, 41%,.7);
   /*========neutral color=======*/
   --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
   --Very-dark-grayish-blue: hsl(213, 9%, 39%);
@@ -91,9 +92,15 @@ header .arrow-down {
 /*===========main==========*/
 main {
   /*===========review container=======*/
+  /*===========image container*/
+  /* =============footer ==============*/
 }
 
 main p {
+  font-family: 'Barlow', sans-serif;
+}
+
+main h6 {
   font-family: 'Barlow', sans-serif;
 }
 
@@ -117,7 +124,7 @@ main .container .wrapper .p-font {
 }
 
 main .container .wrapper a {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
   color: black;
@@ -125,14 +132,18 @@ main .container .wrapper a {
 
 main .container .wrapper .color-div {
   position: absolute;
-  width: 43.5%;
+  width: 35%;
   background-color: var(--Yellow);
   height: 12px;
   top: 83%;
-  left: 28%;
+  left: 32.5%;
   border-radius: 20px;
   z-index: -1;
-  opacity: .5;
+  opacity: .3;
+}
+
+main .container .wrapper .red {
+  background-color: var(--Soft-red);
 }
 
 main .container .font-weight {
@@ -172,7 +183,11 @@ main .container .wrp .p-right {
 }
 
 main .container .margin-top {
-  margin-top: -.3rem;
+  margin-top: -.4rem;
+}
+
+main .review-ctr {
+  padding: 1rem 0 3rem 0;
 }
 
 main .review-ctr h3 {
@@ -185,5 +200,104 @@ main .review-ctr h3 {
 
 main .review-ctr .op {
   opacity: .4;
+}
+
+main .review-ctr .feedback-ctr {
+  background-color: var(--White);
+}
+
+main .review-ctr .feedback-ctr .feedback {
+  padding: 2rem 1rem;
+}
+
+main .review-ctr .feedback-ctr .feedback .human-log {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+main .review-ctr .feedback-ctr .feedback .human-log img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+main .review-ctr .feedback-ctr .feedback p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  line-height: 1.5rem;
+  opacity: .7;
+}
+
+main .review-ctr .feedback-ctr .feedback h5 {
+  text-align: center;
+  margin-bottom: .7rem;
+}
+
+main .review-ctr .feedback-ctr .feedback h6 {
+  text-align: center;
+  font-size: .8rem;
+}
+
+main .image-ctr .mini-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .image-ctr .mini-logo img {
+  width: 50%;
+}
+
+main footer {
+  background-color: var(--Dark-moderate-cyan-footer-bg2);
+  padding: 3.8rem 0 4.6rem 0;
+}
+
+main footer .fot-logo {
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 1.8rem;
+}
+
+main footer .fot-logo svg {
+  width: 100%;
+}
+
+main footer .fot-logo svg path {
+  fill: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+main footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4.5rem;
+}
+
+main footer .contact p {
+  opacity: .5;
+  font-size: .95rem;
+}
+
+main footer .fontawe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+main footer .fontawe img {
+  width: 10%;
 }
 /*# sourceMappingURL=app.css.map */
