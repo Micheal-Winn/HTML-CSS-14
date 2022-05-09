@@ -256,6 +256,7 @@ main .image-ctr .mini-logo img {
 main footer {
   background-color: var(--Dark-moderate-cyan-footer-bg2);
   padding: 3.8rem 0 4.6rem 0;
+  width: 100%;
 }
 
 main footer .fot-logo {
@@ -299,5 +300,74 @@ main footer .fontawe {
 
 main footer .fontawe img {
   width: 10%;
+}
+
+@media (min-width: 1024px) {
+  body br {
+    display: none;
+  }
+  header {
+    background-image: url(./images/desktop/image-header.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center top 70%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    padding: 2.5rem;
+  }
+  header .navigation img {
+    width: 18%;
+  }
+  header .navigation .info-ctr {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .navigation .info-ctr img {
+    display: none;
+  }
+  header .navigation .info-ctr a {
+    display: block;
+    font-size: 1.2em;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+  }
+  header .navigation .info-ctr button {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .8rem 1.2rem;
+    background-color: var(--White);
+    border: none;
+    border-radius: 50px;
+  }
+  header h1 {
+    font-size: 4.7rem;
+    letter-spacing: .5rem;
+    margin-top: 4.5rem;
+  }
+  header .arrow-down {
+    top: 45%;
+    left: 48%;
+  }
+  main img {
+    width: 50%;
+  }
+  main .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=app.css.map */
