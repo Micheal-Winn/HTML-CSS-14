@@ -315,7 +315,7 @@ main footer .fontawe img {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     overflow: hidden;
-    padding: 2.5rem;
+    padding: 2.5rem 4rem;
   }
   header .navigation img {
     width: 18%;
@@ -332,6 +332,7 @@ main footer .fontawe img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-right: 1.5rem;
   }
   header .navigation .info-ctr img {
     display: none;
@@ -361,13 +362,72 @@ main footer .fontawe img {
     top: 45%;
     left: 48%;
   }
-  main img {
-    width: 50%;
-  }
-  main .container {
+  main .second-page {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1000px;
+  }
+  main .second-page .br2 {
+    display: block;
+  }
+  main .second-page .br1 {
+    display: inline;
+  }
+  main .second-page .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .second-page .container .photo {
+    width: 50%;
+  }
+  main .second-page .container .photo img {
+    width: 100%;
+    padding: 1rem;
+  }
+  main .second-page .container .transform {
+    content: url(./images/desktop/image-transform.jpg);
+  }
+  main .second-page .container .stand-out {
+    content: url(./images/desktop/image-stand-out.jpg);
+  }
+  main .second-page .container .wrapper {
+    width: 50%;
+    outline: 1px solid red;
+  }
+  main .second-page .container .wrapper h2 {
+    font-size: 2.5rem;
+  }
+  main .second-page .container .wrapper .color-div {
+    width: 8.3rem;
+    top: 24rem;
+    left: 8rem;
+    opacity: .6;
+  }
+  main .second-page .container .padding {
+    padding: 7rem 8.5rem;
+    text-align: left;
+  }
+  main .second-page .container .padding .p-font {
+    text-align: left;
+    padding: 0;
+    padding-right: 5rem;
+    margin-bottom: 2.8rem;
+  }
+  main .second-page .top {
+    height: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  main .second-page .bot {
+    height: 50%;
   }
 }
 /*# sourceMappingURL=app.css.map */

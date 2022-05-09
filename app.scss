@@ -313,7 +313,7 @@ main {
         background-position: center top 70%;
         box-sizing: border-box;
         overflow: hidden;
-        padding: 2.5rem;
+        padding: 2.5rem 4rem;
 
         .navigation {
             img {
@@ -326,6 +326,7 @@ main {
                 gap: 2.5rem;
                 align-items: center;
                 justify-content: space-between;
+                margin-right: 1.5rem;
 
 
                 img {
@@ -367,12 +368,74 @@ main {
 
 
     main {
-        // outline: 2px solid red;
-        img {
-            width: 50%;
-        }
-        .container {
+        .second-page {
             display: flex;
+            flex-direction: column;
+            height: 1000px;
+
+            .br2 {
+                display: block;
+            }
+            .br1 {
+                display: inline;
+            }
+
+            .container {
+                display: flex;
+    
+                .photo {
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                        padding: 1rem;
+                    }
+                }
+                .transform {
+                    content: url(./images/desktop/image-transform.jpg);
+
+                }
+                .stand-out {
+                    content: url(./images/desktop/image-stand-out.jpg);
+                }
+    
+                .wrapper {
+                    width: 50%;
+                    outline: 1px solid red;
+
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+
+                    .color-div {
+                        width: 8.3rem;
+                        top: 24rem;
+                        left: 8rem;
+                        opacity: .6;
+                    }
+                }
+
+                .padding {
+                    padding: 7rem 8.5rem;
+                    text-align: left;
+
+                    .p-font{
+                        text-align: left;
+                        padding: 0;
+                        padding-right: 5rem;
+                        margin-bottom: 2.8rem;
+                    }
+                }
+            }
+
+            .top {
+                height: 50%;
+                flex-direction: row-reverse;
+            }
+            .bot {
+                height: 50%;
+            }
+
         }
     }
 }
