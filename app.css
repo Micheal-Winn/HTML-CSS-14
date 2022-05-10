@@ -114,6 +114,10 @@ main .container .wrapper {
   position: relative;
 }
 
+main .container .wrapper .br2 {
+  display: none;
+}
+
 main .container .wrapper .p-font {
   text-align: center;
   font-size: 1.2rem;
@@ -130,6 +134,10 @@ main .container .wrapper a {
   color: black;
 }
 
+main .container .wrapper a:hover {
+  cursor: pointer;
+}
+
 main .container .wrapper .color-div {
   position: absolute;
   width: 35%;
@@ -140,6 +148,14 @@ main .container .wrapper .color-div {
   border-radius: 20px;
   z-index: -1;
   opacity: .3;
+}
+
+main .container .wrapper a:hover ~ .color-div {
+  opacity: 1;
+}
+
+main .container .wrapper a:hover ~ .red {
+  opacity: 1;
 }
 
 main .container .wrapper .red {
@@ -289,6 +305,11 @@ main footer .contact p {
   font-size: .95rem;
 }
 
+main footer .contact p:hover {
+  color: var(--White);
+  cursor: pointer;
+}
+
 main footer .fontawe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,8 +319,13 @@ main footer .fontawe {
   gap: 2rem;
 }
 
-main footer .fontawe img {
+main footer .fontawe svg {
   width: 10%;
+}
+
+main footer .fontawe svg:hover path {
+  fill: var(--White);
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -343,7 +369,11 @@ main footer .fontawe img {
     color: #fff;
     font-family: 'Barlow', sans-serif;
   }
-  header .navigation .info-ctr button {
+  header .navigation .info-ctr .btn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+  }
+  header .navigation .info-ctr .btn button {
     display: block;
     font-size: 1rem;
     text-transform: uppercase;
@@ -353,6 +383,10 @@ main footer .fontawe img {
     border: none;
     border-radius: 50px;
   }
+  header .navigation .info-ctr .btn button:hover {
+    background-color: transparent;
+    color: #fff;
+  }
   header h1 {
     font-size: 4.7rem;
     letter-spacing: .5rem;
@@ -361,6 +395,9 @@ main footer .fontawe img {
   header .arrow-down {
     top: 45%;
     left: 48%;
+  }
+  main {
+    /*=============footer==========*/
   }
   main .second-page {
     display: -webkit-box;
@@ -475,6 +512,41 @@ main footer .fontawe img {
   }
   main .review-ctr .feedback-ctr .feedback h6 {
     font-size: .8rem;
+  }
+  main .image-ctr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .image-ctr .mini-logo .milkbottle {
+    content: url(./images/desktop/image-gallery-milkbottles.jpg);
+  }
+  main .image-ctr .mini-logo .orange {
+    content: url(./images/desktop/image-gallery-orange.jpg);
+  }
+  main .image-ctr .mini-logo .cone {
+    content: url(./images/desktop/image-gallery-cone.jpg);
+  }
+  main .image-ctr .mini-logo .sugar-cube {
+    content: url(./images/desktop/image-gallery-sugarcubes.jpg);
+  }
+  main footer .fot-logo {
+    width: 20rem;
+  }
+  main footer .contact {
+    width: 40rem;
+  }
+  main footer .contact p {
+    font-size: 1.2rem;
+  }
+  main footer .fontawe {
+    width: 11rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main footer .fontawe svg {
+    width: 2rem;
   }
 }
 /*# sourceMappingURL=app.css.map */

@@ -102,6 +102,10 @@ main {
             text-align: center;
             position: relative;
 
+            .br2 {
+                display: none;
+            }
+
             .p-font {
                 text-align: center;
                 font-size: 1.2rem;
@@ -118,6 +122,9 @@ main {
                 color: black;
                
             }
+            a:hover {
+                cursor: pointer;
+            }
            
             .color-div {
                 position: absolute;
@@ -129,6 +136,14 @@ main {
                 border-radius: 20px;
                 z-index: -1;
                 opacity: .3;
+            }
+
+            a:hover ~ .color-div {
+                opacity: 1;
+            }
+
+            a:hover ~ .red {
+                opacity: 1;
             }
 
             .red {
@@ -284,6 +299,11 @@ main {
                 opacity: .5;
                 font-size: .95rem;
             }
+
+            p:hover {
+                color: var(--White);
+                cursor: pointer;
+            }
         }
 
         .fontawe {
@@ -292,8 +312,12 @@ main {
             margin: 0 auto;
             gap: 2rem;
 
-            img {
+            svg {
                 width: 10%;
+            }
+            svg:hover path {
+                fill: var(--White);
+                cursor: pointer;
             }
         }
     }
@@ -341,16 +365,27 @@ main {
                     font-family: 'Barlow', sans-serif;
                 }
 
-                button {
-                    display: block;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    padding: .8rem 1.2rem;
-                    background-color: var(--White);
-                    border: none;
+                .btn {
+                    background-color: rgba( 255, 255, 255, .5);
                     border-radius: 50px;
+
+                    button {
+                        display: block;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        padding: .8rem 1.2rem;
+                        background-color: var(--White);
+                        border: none;
+                        border-radius: 50px;
+                    }
+    
+                    button:hover {
+                        background-color: transparent;
+                        color: #fff;
+                    }
                 }
+                
             }
         }
 
@@ -414,6 +449,7 @@ main {
                     }
                     .red {
                         top: 26.1rem;
+
                     }
                 }
 
@@ -506,6 +542,56 @@ main {
                 }
             }
         }
+
+        .image-ctr {
+            display: flex;
+
+            .mini-logo {
+
+                .milkbottle {
+                    content: url(./images/desktop/image-gallery-milkbottles.jpg);
+
+                }
+
+                .orange {
+                    content: url(./images/desktop/image-gallery-orange.jpg);
+                }
+
+                .cone {
+                    content: url(./images/desktop/image-gallery-cone.jpg);
+                }
+
+                .sugar-cube {
+                    content: url(./images/desktop/image-gallery-sugarcubes.jpg);
+                }
+            }
+        }
+
+        /*=============footer==========*/
+        footer {
+
+            .fot-logo {
+                width: 20rem;
+            }
+
+            .contact {
+                width: 40rem;
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .fontawe {
+                width: 11rem;
+                justify-content: space-between;
+
+                svg {
+                    width: 2rem;
+                }
+            }
+        }
     }
 }
+
 
