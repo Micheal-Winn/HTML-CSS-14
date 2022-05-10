@@ -398,16 +398,18 @@ main footer .fontawe img {
   }
   main .second-page .container .wrapper {
     width: 50%;
-    outline: 1px solid red;
   }
   main .second-page .container .wrapper h2 {
     font-size: 2.5rem;
   }
   main .second-page .container .wrapper .color-div {
     width: 8.3rem;
-    top: 24rem;
+    top: 28.1rem;
     left: 8rem;
     opacity: .6;
+  }
+  main .second-page .container .wrapper .red {
+    top: 26.1rem;
   }
   main .second-page .container .padding {
     padding: 7rem 8.5rem;
@@ -428,6 +430,51 @@ main footer .fontawe img {
   }
   main .second-page .bot {
     height: 50%;
+  }
+  main .graphic-photography {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .graphic-photography .wrp {
+    width: 50%;
+  }
+  main .graphic-photography .wrp .design img {
+    content: url(./images/desktop/image-graphic-design.jpg);
+  }
+  main .graphic-photography .wrp .photography img {
+    content: url(./images/desktop/image-photography.jpg);
+  }
+  main .graphic-photography .wrp .overlap-p p {
+    padding-inline: 11rem;
+  }
+  main .graphic-photography .margin-top {
+    margin-top: 0;
+  }
+  main .review-ctr {
+    padding: 4rem 0;
+  }
+  main .review-ctr h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+  }
+  main .review-ctr .feedback-ctr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem 3rem;
+  }
+  main .review-ctr .feedback-ctr .feedback p {
+    padding-inline: 3.2rem;
+    margin-bottom: 1.5rem;
+  }
+  main .review-ctr .feedback-ctr .feedback h5 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: .5rem;
+  }
+  main .review-ctr .feedback-ctr .feedback h6 {
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=app.css.map */

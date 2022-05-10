@@ -401,7 +401,6 @@ main {
     
                 .wrapper {
                     width: 50%;
-                    outline: 1px solid red;
 
                     h2 {
                         font-size: 2.5rem;
@@ -409,9 +408,12 @@ main {
 
                     .color-div {
                         width: 8.3rem;
-                        top: 24rem;
+                        top: 28.1rem;
                         left: 8rem;
                         opacity: .6;
+                    }
+                    .red {
+                        top: 26.1rem;
                     }
                 }
 
@@ -436,6 +438,73 @@ main {
                 height: 50%;
             }
 
+        }
+
+        .graphic-photography {
+            display: flex;
+
+            .wrp {
+                width: 50%;
+
+                .design {
+                    
+                    img {
+                        content: url(./images/desktop/image-graphic-design.jpg);
+                    }
+                }
+
+                .photography {
+                   
+                    img {
+                        content: url(./images/desktop/image-photography.jpg);
+                    }
+                }
+
+                .overlap-p  {
+
+                    p {
+                        padding-inline: 11rem;
+                    }
+                    
+                }
+            }
+
+            .margin-top {
+                margin-top: 0;
+            }
+        }
+
+
+        .review-ctr {
+            padding: 4rem 0;
+
+            h3 {
+                font-size: 1.2rem;
+                margin-bottom: 1.3rem;
+            }
+
+            .feedback-ctr {
+                display: flex;
+                padding: 1rem 3rem;
+    
+                .feedback {
+    
+                    p {
+                        padding-inline: 3.2rem;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    h5 {
+                        font-size: 1.1rem;
+                        font-weight: 900;
+                        margin-bottom: .5rem;
+                    }
+
+                    h6 {
+                        font-size: .8rem;
+                    }
+                }
+            }
         }
     }
 }
